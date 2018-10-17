@@ -2,10 +2,26 @@
 <html>
     <head>
         <Title>Homepage</Title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1{
+                font-family: 'Roboto Slab', serif;
+            }
+            .fa-cc-amex{
+                font-size: 80px;
+                color: #333;
+                text-align: center;
+            }
+            .fa-cc-amex:hover{
+                color:#f00;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <img src="assets/img/logo.png">
+            <img src="assets/img/logo.png" id="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -13,43 +29,53 @@
                 </ul>
             </nav>
         </header>
-        <h1>This is my site</h1>
-        <img src="assets/img/bio.jpg">
-        <br>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
-        <ul>
-            <li>Coffeee</li>
-            <li>Soda
+        <div id ="container">
+            <p>
+                <i class="fa fa-cc-amex"></i>
+            </p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/5XUGy20HH1I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h1>This is my site</h1>
+            <div class="col">
+                <img src="assets/img/bio.jpg">
+                <br>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
                 <ul>
-                    <li>Dr. Pepper</li>
-                    <li>Sprite</li>
+                    <li>Coffeee</li>
+                    <li>Soda
+                    <ul>
+                        <li>Dr. Pepper</li>
+                        <li>Sprite</li>
+                    </ul>
+                </li>
+                <li>Tea</li>
                 </ul>
-            </li>
-            <li>Tea</li>
-        </ul>
-        <table border=1>
-            <tr>
-                <th>Show</th>
-                <th>Year</th>
-                <th>Role</th>
-            </tr>
-            <tr>
-                <td>Insecure</td>
-                <td>2016</td>
-                <td>Lawrence</td>
-            </tr>
-            <tr>
-                <td>The Game</td>
-                <td>2005</td>
-                <td>Football Player</td>
-            </tr>       
-            <tr>
-                <td>Insecure</td>
-                <td>2016</td>
-                <td>Lawrence</td>
-            </tr>
-        </table>
-        <br>
+            </div>
+            <div class="col">
+                <table border=1>
+                    <tr>
+                        <th>Show</th>
+                        <th>Year</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>Insecure</td>
+                        <td>2016</td>
+                        <td>Lawrence</td>
+                    </tr>
+                    <tr>
+                        <td>The Game</td>
+                        <td>2005</td>
+                        <td>Football Player</td>
+                    </tr>       
+                    <tr>
+                        <td>Insecure</td>
+                        <td>2016</td>
+                        <td>Lawrence</td>
+                    </tr>
+                </table>
+            </div>
+        <br style="clear:both;">
+        </div>
         <footer>
             <p>
                 <a href="index.html">Home</a> |
